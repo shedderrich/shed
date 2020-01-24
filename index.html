@@ -17,30 +17,5 @@ Breaking News: niijo ist dumm
 <IMG  src="bilder/shed.png" width="800" height="800" alt="shed">
 </center>
 
-
-
-</table>
- <center> 
-<button onclick="getLocation()">Drück mich</button>
-</center> 
-<p id="demo"></p>
-
-<script>
-var x = document.getElementById("demo");
-
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.watchPosition(showPosition);
-  } else { 
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-}
-    
-function showPosition(position) {
-    x.innerHTML="Latitude: " + position.coords.latitude + 
-    "<br>Longitude: " + position.coords.longitude;
-}
-</script>
-
 </body>
 </html>
